@@ -57,7 +57,7 @@
     </div>
 </nav>
 <div class="container">
-    <form method="post" action="./userRegister">
+    <form method="post" action="/userRegisterServlet">
         <table class="table table-bordered table-hover" style="text-align: center; border: 1px solid #dddddd">
             <thead>
                 <tr>
@@ -68,15 +68,15 @@
             <tr>
                 <td style="width: 110px;"><h5>아이디</h5></td>
                 <td><input class="form-control" type="text" id="userID" name="userID" maxlength="20" placeholder="아이디를 입력해주세요"></td>
-                <td style="width: 110px"><button class="btn btn-primary" onclick="registerCheckFunchtion();" type="button">중복체크</td>
+                <td style="width: 110px"><button class="btn btn-primary" onclick="registerCheckFunchtion();" type="button">중복체크</button></td>
             </tr>
             <tr>
                 <td style="width: 110px;"><h5>비밀번호</h5></td>
-                <td colspan="2"><input class="form-control" onkeyup="passwordCheckFunction()" type="password" id="userPassword1" name="userPassword1" maxlength="20" placeholder="비밀번호를 입력해주세요"></td>
+                <td colspan="2"><input class="form-control" onkeyup="passwordCheckFunction();" type="password" id="userPassword1" name="userPassword1" maxlength="20" placeholder="비밀번호를 입력해주세요"></td>
             </tr>
             <tr>
                 <td style="width: 110px;"><h5>비밀번호확인</h5></td>
-                <td colspan="2"><input class="form-control" onkeyup="passwordCheckFunction()" type="password" id="userPassword2" name="userPassword2" maxlength="20" placeholder="비밀번호확인을 입력해주세요"></td>
+                <td colspan="2"><input class="form-control" onkeyup="passwordCheckFunction();" type="password" id="userPassword2" name="userPassword2" maxlength="20" placeholder="비밀번호확인을 입력해주세요"></td>
             </tr>
             <tr>
                 <td style="width: 110px;"><h5>이름</h5></td>
@@ -89,7 +89,7 @@
             <tr>
                 <td style="width: 110px;"><h5>성별</h5></td>
                 <td colspan="2">
-                    <div class="form-group" style="text-align: center; margin: 0 auto";>
+                    <div class="form-group" style="text-align: center; margin: 0 auto;">
                         <div class="btn-group" data-toggle="buttons">
                             <label class="btn btn-primary active">
                                 <input type="radio" name="userGender" autocomplete="off" value="남자" checked>남자
@@ -109,5 +109,13 @@
         </table>
     </form>
 </div>
+<script>
+    function passwordCheckFunction(){
+        alert("Hi");
+    }
+    function registerCheckFunchtion(){
+        alert("Hi");
+    }
+</script>
 </body>
 </html>
